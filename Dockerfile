@@ -164,7 +164,7 @@ COPY requirements.txt .
 # Install Python dependencies, upgrade pip 
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir fastapi uvicorn openai-whisper boto3 jsonschema
+    pip install --no-cache-dir fastapi uvicorn && \
     pip install openai-whisper && \
     pip install jsonschema 
 
